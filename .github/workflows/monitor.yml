@@ -1,0 +1,38 @@
+name: Monitor funciones La Odisea
+
+on:
+  repository_dispatch:
+    # Disparado por un cron EXTERNO (cron-job.org) cada 1 min via la API
+    # de GitHub. El "schedule" nativo de Actions no es preciso: puede
+    # demorar varios minutos bajo carga de la plataforma y no soporta
+    # intervalos menores a 5 min de forma confiable. Este approach delega
+    # la precision del timer a un servicio externo hecho para eso.
+    types: [check-funciones]
+  workflow_dispatch: {} # permite disparar la corrida manualmente desde la pestaña Actions
+
+permissions:
+  contents: write # necesario para poder commitear state.json actualizado
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Ejecutar monitor
+        env:
+          FILM_ID: "5875"
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: node monitor.js
+
+      - name: Guardar estado actualizado
+        run: |
+          git config user.name "monitor-bot"
+          git config user.email "monitor-bot@users.noreply.github.com"
+          git add state.json
+          git diff --staged --quiet || git commit -m "Actualizar estado de funciones [skip ci]"
+          git push
