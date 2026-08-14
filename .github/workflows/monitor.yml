@@ -1,13 +1,8 @@
 name: Monitor funciones La Odisea
 
 on:
-  repository_dispatch:
-    # Disparado por un cron EXTERNO (cron-job.org) cada 1 min via la API
-    # de GitHub. El "schedule" nativo de Actions no es preciso: puede
-    # demorar varios minutos bajo carga de la plataforma y no soporta
-    # intervalos menores a 5 min de forma confiable. Este approach delega
-    # la precision del timer a un servicio externo hecho para eso.
-    types: [check-funciones]
+  schedule:
+    - cron: '*/5 * * * *'  # cada 5 minutos, gratis en repos publicos
   workflow_dispatch: {} # permite disparar la corrida manualmente desde la pestaña Actions
 
 permissions:

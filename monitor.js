@@ -43,7 +43,9 @@ function flatten(data) {
   const days = data.days || {};
   for (const [date, cines] of Object.entries(days)) {
     for (const cine of cines) {
+      if (!cine.name.toLowerCase().includes("norcenter")) continue;
       for (const formato of cine.formats) {
+        if (!formato.formatDescription.toLowerCase().includes("imax")) continue;
         for (const perf of formato.performances) {
           flat[perf.performanceId] = {
             date,
