@@ -2,7 +2,7 @@ name: Monitor funciones La Odisea
 
 on:
   schedule:
-    - cron: '*/25 * * * *'  # cada 5 minutos, gratis en repos publicos
+    - cron: '*/10 * * * *'  # cada 5 minutos, gratis en repos publicos
   workflow_dispatch: {} # permite disparar la corrida manualmente desde la pestaña Actions
 
 permissions:
