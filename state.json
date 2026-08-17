@@ -160,5 +160,17 @@
     "cine": "IMAX Theatre (Norcenter)",
     "formato": "IMAX-Subtitulado",
     "hora": "13:05"
+  },
+  "568067": {
+    "date": "2026-08-21",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "11:50"
+  },
+  "568068": {
+    "date": "2026-08-21",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "15:25"
   }
 }
