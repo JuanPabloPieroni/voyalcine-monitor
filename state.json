@@ -142,5 +142,23 @@
     "cine": "IMAX Theatre (Norcenter)",
     "formato": "IMAX-Subtitulado",
     "hora": "19:00"
+  },
+  "568997": {
+    "date": "2026-09-07",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "16:15"
+  },
+  "568998": {
+    "date": "2026-09-08",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "19:00"
+  },
+  "568999": {
+    "date": "2026-09-09",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "19:00"
   }
 }
