@@ -2,12 +2,11 @@ name: Monitor funciones La Odisea
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # fallback cada 30 min por si se corta la cadena
+    - cron: '0,10,20,30,40,50 * * * *'
   workflow_dispatch: {}
 
 permissions:
   contents: write
-  actions: write  # necesario para disparar el siguiente workflow
 
 jobs:
   check:
@@ -33,10 +32,3 @@ jobs:
           git diff --staged --quiet || git commit -m "Actualizar estado de funciones [skip ci]"
           git pull --rebase
           git push
-
-      - name: Esperar y disparar siguiente corrida
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          sleep 300
-          gh workflow run monitor.yml
