@@ -1,1 +1,74 @@
-{}
+{
+  "569450": {
+    "date": "2026-09-10",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "19:00"
+  },
+  "569454": {
+    "date": "2026-09-11",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "19:00"
+  },
+  "569455": {
+    "date": "2026-09-12",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "11:00"
+  },
+  "569458": {
+    "date": "2026-09-12",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "22:30"
+  },
+  "569459": {
+    "date": "2026-09-13",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "11:00"
+  },
+  "569462": {
+    "date": "2026-09-13",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "22:30"
+  },
+  "569463": {
+    "date": "2026-09-14",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "12:20"
+  },
+  "569465": {
+    "date": "2026-09-14",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "19:00"
+  },
+  "569468": {
+    "date": "2026-09-15",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "15:50"
+  },
+  "569469": {
+    "date": "2026-09-15",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "22:30"
+  },
+  "569470": {
+    "date": "2026-09-16",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "13:20"
+  },
+  "569473": {
+    "date": "2026-09-16",
+    "cine": "IMAX Theatre (Norcenter)",
+    "formato": "IMAX-Subtitulado",
+    "hora": "22:30"
+  }
+}
